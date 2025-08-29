@@ -113,7 +113,6 @@ body {
   
 }
 
-
 .sobre-caixa {
   padding: 2rem;
   max-width: 600px;
@@ -127,5 +126,5 @@ body {
 
 .sobre-paragrafo {
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
