@@ -103,6 +103,26 @@ body {
   
 }
 
+.links-cabecalho {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-social {
+  color: #8a8aff; /* cor que combina com o nome */
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link-social:hover {
+  color: #ffffff; /* muda cor ao passar o mouse */
+  transform: scale(1.05);
+}
+
 .sobre {
   padding: 6rem 2rem;
 }
@@ -128,3 +148,5 @@ body {
   text-align: center;
   font-size: 0.8rem;
 }
+
+
