@@ -22,3 +22,47 @@ body {
   background-color: var(--escuro);
   color: var(--claro);
 }
+
+.navegacao {
+  pos: fixed;
+  top: 0;
+  background: rgba(15, 23, 42, 0.6);
+  width: 100%;
+  z-index: 100%;
+  padding: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
+  
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(claro);
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem;
+  
+}
+
+.menu-link:after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolut;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+  transition: width 0.5s ease;
+  
+}
+
+.menu-link:hover::after{
+  width: 100%
+}
+
+.cabecalho
