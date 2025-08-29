@@ -65,6 +65,13 @@ body {
   width: 100%
 }
 
+.titulo {
+  font-size: 2rem;
+  color: var(--secundaria);
+  font-weight: bold;
+  margin: 20px;
+}
+
 .cabecalho {
   min-height: 100vh;
   display: flex;
