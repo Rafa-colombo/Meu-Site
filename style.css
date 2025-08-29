@@ -103,6 +103,7 @@ body {
   
 }
 
+/* container dos links */
 .links-cabecalho {
   margin-top: 15px;
   display: flex;
@@ -110,6 +111,7 @@ body {
   gap: 15px;
 }
 
+/* estilo base dos links */
 .link-social {
   display: flex;
   align-items: center;
@@ -138,6 +140,15 @@ body {
 .link-social.lattes:hover {
   background-color: #4b0082;
 }
+
+/* GitHub preto */
+.link-social.github {
+  background-color: #333;
+}
+.link-social.github:hover {
+  background-color: #000;
+}
+
 
 
 .sobre {
