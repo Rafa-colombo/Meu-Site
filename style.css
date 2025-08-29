@@ -104,24 +104,41 @@ body {
 }
 
 .links-cabecalho {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .link-social {
-  color: #8a8aff; /* cor que combina com o nome */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 25px;
   font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  color: white;
 }
 
-.link-social:hover {
-  color: #ffffff; /* muda cor ao passar o mouse */
-  transform: scale(1.05);
+/* LinkedIn azul */
+.link-social.linkedin {
+  background-color: #0a66c2;
 }
+.link-social.linkedin:hover {
+  background-color: #004182;
+}
+
+/* Lattes roxo */
+.link-social.lattes {
+  background-color: #6a0dad;
+}
+.link-social.lattes:hover {
+  background-color: #4b0082;
+}
+
 
 .sobre {
   padding: 6rem 2rem;
