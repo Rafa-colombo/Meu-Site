@@ -42,18 +42,18 @@ body {
 
 .menu-link {
   text-decoration: none;
-  color: var(claro);
+  color: var(--claro);
   font-weight: 500;
   position: relative;
   padding: 0.5rem;
   
 }
 
-.menu-link:after{
+.menu-link::after{
   content: '';
   height: 2px;
-  width: 100%;
-  position: absolut;
+  width: 0;
+  position: absolute;
   bottom: 0;
   left: 0;
   background: linear-gradient(90deg, var(--primaria), var(--secundaria));
