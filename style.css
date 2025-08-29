@@ -1,21 +1,71 @@
+/* Estilos básicos */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+  scroll-behavior: smooth;
+  color: #333;
 }
 
-h1 {
-  color: #333;
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.botao {
-  padding: 10px 20px;
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #4CAF50;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
   background-color: #4CAF50;
   color: white;
-  border: none;
-  cursor: pointer;
   border-radius: 5px;
-  text-decoration: none;
+  border-color: #4CAF50;
+}
+
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+section:hover {
+  background-color: #f0f8f5;
+}
+
+button {
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
 }
