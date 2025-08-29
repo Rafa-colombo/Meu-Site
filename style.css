@@ -161,7 +161,7 @@ body {
 
 .sobre-caixa {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;  /*centralizar*/
   border-radius: 15px;
   border: 1px solid var(--vidro);
