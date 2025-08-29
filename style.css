@@ -104,17 +104,25 @@ body {
 }
 
 .sobre {
-  
+  padding: 6rem 2rem;
 }
 
 .sobre-titulo {
-  
+ font-size: 1.3rem;
 }
 
 .sobre-caixa {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;  /*centralizar*/
+  border-radius: 15px;
+  border: 1px solid var(--vidro);
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
   
 }
 
 .sobre-paragrafo {
-  
+  text-align: center;
+  font-size: 2.5rem;
 }
