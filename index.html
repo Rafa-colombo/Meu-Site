@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello World</title>
+
+    <title>Alterar Cor de Fundo</title>
+     <script>
+      function mudarCor(cor) {
+        document.body.style.backgroundColor = cor;
+      }
+     </script>
 </head>
 <body>
     <h1>Hello, World!</h1>
+
+    <button onclick="mudarCor('lightblue')">Azul Claro</button>
+    <button onclick="mudarCor('lightgreen')">Verde Claro</button>
+    <button onclick="mudarCor('white')">Branco</button>
 </body>
 </html>
