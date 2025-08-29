@@ -149,7 +149,7 @@ body {
   background-color: #000;
 }
 
-.sobre {
+.layout-menu {
   padding: 6rem 2rem;
 }
 
@@ -175,4 +175,37 @@ body {
   font-size: 0.8rem;
 }
 
+.projetos-texto-menu {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  
+}
 
+.projetos-caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rm;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.projetos-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--vidro);
+  overflow: hidden;
+  
+}
+
+.titulo-projeto {
+  color: rgba(226, 232, 240, 0.8);
+  line-height: 1.25rem;
+  
+}
+
+.info-projeto {
+  margin-bottom: 5px;
+}
