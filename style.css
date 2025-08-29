@@ -108,9 +108,12 @@ body {
 }
 
 .sobre-titulo {
- font-size: 1.3rem;
- text-align: center;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block; /* garante que seja um bloco */
+  width: 100%;    /* ocupa a largura total */
 }
+
 
 .sobre-caixa {
   padding: 2rem;
