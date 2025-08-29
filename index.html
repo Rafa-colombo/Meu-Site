@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu site</title>
-
-    <link rel="stylesheet" href="style.css">
-   
+  <meta charset="UTF-8">
+  <title>Site Interativo Simples</title>
+  <link rel="stylesheet" href="style.css">
 </head>
- <body>
+<body>
 
-      <h1>Bem-vindo à minha página</h1>
-      <a href="#secao" class="botao">Ir para a seção</a>
-    
-      <div style="height: 600px;"></div>
-    
-      <section id="secao">
-        <h2>Seção</h2>
-        <p>Conteúdo aqui...</p>
-      </section>
+  <header>
+    <h1>Meu Site Interativo</h1>
+  </header>
 
- </body>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bem-vindo!</h2>
+    <p>Esta é a seção de boas-vindas. Role para ver mais.</p>
+    <button onclick="alert('Você clicou!')">Clique aqui</button>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Informações sobre o site ou projeto.</p>
+    <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">
+      Ir para Contato
+    </button>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Deixe seu contato ou mensagem.</p>
+  </section>
+
+</body>
 </html>
