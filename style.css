@@ -89,7 +89,7 @@ body {
   
 }
 
-h1 {
+.eu {
   font-size: 3rem;
   color: var(--primaria);
   font-weight: bold;
