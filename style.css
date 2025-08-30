@@ -194,7 +194,6 @@ body {
 
 .projetos-card {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
   backdrop-filter: blur(5px);
   border: 1px solid var(--vidro);
   overflow: hidden;
