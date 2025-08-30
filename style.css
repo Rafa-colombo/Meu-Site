@@ -254,9 +254,39 @@ body {
 }
 
 .contato {
-  
+  padding: 40px 20px;
+  background-color: var(--maisEscuro);
+  color: #fff;
+  text-align: center;
 }
 
 .links-contato {
-  
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
+
+/* estilo base dos links de contato */
+.link-contato {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover simples para contato */
+.link-contato:hover {
+  background-color: var(--primaria);
+  color: var(--maisEscuro);
+  transform: scale(1.05);
+}
+
