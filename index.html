@@ -174,7 +174,7 @@
     <h2 class="titulos-menu">Contato</h2>
   
     <div class="links-contato">
-        <a class="link-contato" target="_blank">
+        <a class="link-contato" href="#" onclick="copiarEmail(event)">
             📧 rafaelcolombomiranda@gmail.com
         </a>
         <a class="link-contato" href="https://api.whatsapp.com/send?phone=5527999095716" target="_blank">
@@ -183,6 +183,18 @@
     </div>
   </section>
 
-
+  <script>
+    function copiarEmail(event) {
+      event.preventDefault(); // evita que o link tente abrir algo
+    
+      const email = "rafaelcolombomiranda@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        alert("E-mail copiado para a área de transferência!");
+      }).catch(err => {
+        alert("Erro ao copiar: " + err);
+      });
+    }
+  </script>
+  
 </body>
 </html>
