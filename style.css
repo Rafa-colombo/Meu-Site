@@ -186,28 +186,59 @@ body {
 .projetos-caixa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rm;
+  gap: 2rem; /* corrigido '2rm' para '2rem' */
   max-width: 1200px;
   margin: 0 auto;
-  
+  padding: 20px;
 }
 
+/* Cartões dos projetos */
 .projetos-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--vidro);
-  overflow: hidden;
-  
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Interação ao passar o mouse */
+.projetos-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border-color: var(--escuro);
+}
+
+/* Título do projeto */
 .titulo-projeto {
   color: var(--escuro);
-  line-height: 1.25rem;
-  font-size: 1.3rem;
-  
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+/* Informações do projeto */
 .info-projeto {
-  margin-bottom: 5px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 15px;
 }
+
+/* Botão/link dentro do card */
+.projeto-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: var(--escuro);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.projeto-btn:hover {
+  background: #000;
+}
+
