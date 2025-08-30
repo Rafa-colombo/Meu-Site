@@ -201,11 +201,13 @@ body {
 }
 
 .titulo-projeto {
-  color: rgba(226, 232, 240, 0.8);
+  color: var(--escuro);
   line-height: 1.25rem;
+  font-size: 1.3rem;
   
 }
 
 .info-projeto {
   margin-bottom: 5px;
+  font-size: 0.8rem;
 }
