@@ -183,17 +183,26 @@
     </div>
   </section>
 
+  <div id="alerta-copy" class="alerta-copy">E-mail copiado!</div>
+
   <script>
-    function copiarEmail(event) {
-      event.preventDefault(); // evita que o link tente abrir algo
-    
+    const emailLink = document.getElementById("email-link");
+    const alerta = document.getElementById("alerta-copy");
+  
+    emailLink.addEventListener("click", (e) => {
+      e.preventDefault();
       const email = "rafaelcolombomiranda@gmail.com";
+      
       navigator.clipboard.writeText(email).then(() => {
-        alert("E-mail copiado para a área de transferência!");
-      }).catch(err => {
-        alert("Erro ao copiar: " + err);
+        // Mostra alerta
+        alerta.classList.add("show");
+  
+        // Esconde após 2 segundos
+        setTimeout(() => {
+          alerta.classList.remove("show");
+        }, 2000);
       });
-    }
+    });
   </script>
   
 </body>
